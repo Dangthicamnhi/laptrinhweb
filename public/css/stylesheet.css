@@ -1,0 +1,107 @@
+a {
+    text-decoration: none;
+}
+
+td {
+    width: 50%;
+    /* text-align: center; */
+}
+
+.header,
+.loginForm,
+.RegisterForm,
+.footer,
+.viewForm {
+    border: solid black 1px;
+}
+
+.header {
+    padding: 10px;
+    margin: 15px 5px;
+    text-align: center;
+}
+
+.header a {
+    color: black;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.content {
+    margin: 80px calc(50% - 250px);
+}
+
+.name,
+.password,
+.email,
+.nhapLaiPass,
+.checkbox {
+    margin: 10px;
+    text-align: center;
+}
+
+.viewForm {
+    padding: 30px;
+    width: 500px;
+}
+
+.loginForm {
+    padding: 30px;
+    width: 500px;
+}
+
+.RegisterForm {
+    padding: 30px;
+    width: 500px;
+}
+
+.btnConfirm {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.btnDangNhap,
+.btnDangKy,
+.btnChinhSua {
+    margin: 0 20px;
+    padding: 10px 14px;
+    color: white;
+    background-color: #0058D7;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.view {
+    padding: 10px;
+}
+
+.view td:last-child {
+    text-align: left;
+}
+
+.footer {
+    padding: 10px;
+    margin: 15px 5px;
+    text-align: center;
+}
+
+.phanTrang {
+    display: inline-block;
+
+    text-align: center;
+}
+
+.phanTrang a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+.dong {
+    width: 400px;
+    height: 20px;
+}
