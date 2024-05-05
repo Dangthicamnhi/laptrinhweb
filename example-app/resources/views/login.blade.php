@@ -38,9 +38,9 @@
                     <button type="submit" class="btnSubmit">Đăng nhập</button>
                 </div>
                 {{-- lay thong bao loi --}}
-                {{-- @if ($errors->any())
+                @if ($errors->any())
                     <div class="text-danger">{{ $errors->first() }}</div>
-                @endif --}}
+                @endif
             </form>
         </div>
     </div>
