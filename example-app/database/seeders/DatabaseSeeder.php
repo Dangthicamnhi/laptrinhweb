@@ -16,16 +16,25 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        for ($i = 0; $i < 10; $i++) {
-            # code...
+        // DB::table('users')->insert([
+        //     'name' => 'camnhi',
+        //     'email' => 'camnhi@gmail.com',
+        //     'password' => Hash::make('123456'),
+        //     'phone' => '213456789',
+        //     'image' => 'abc' . '.png',
 
-            DB::table('users')->insert([
-                'name' => Str::random(10),
-                'phone' => random_int(1000000000, 9999999999),
-                'image' => Str::random(10) . '.png',
-                'email' => Str::random(10) . '@gmail.com',
-                'password' => Hash::make('123456'),
-            ]);
-        }
+        // ]);
+
+        // for ($i = 0; $i < 10; $i++) {
+        //     # code...
+
+        //     DB::table('users')->insert([
+        //         'name' => Str::random(10),
+        //         'phone' => random_int(1000000000, 9999999999),
+        //         'image' => Str::random(10) . '.png',
+        //         'email' => Str::random(10) . '@gmail.com',
+        //         'password' => Hash::make('123456'),
+        //     ]);
+        // }
     }
 }
