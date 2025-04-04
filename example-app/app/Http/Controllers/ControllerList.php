@@ -53,7 +53,6 @@ class ControllerList extends Controller
     {
         if ($user = User::find($id)) {
             return view('update', compact('user'));
-
         }
         return redirect()->route('list')->withErrors('Khong tim thay!');
     }
@@ -92,7 +91,6 @@ class ControllerList extends Controller
                 return redirect()->route('list')->withSuccess('Thay doi thanh cong');
             }
             return redirect()->route('list')->withErrors('Thay doi khong thanh cong');
-
         }
         return redirect()->route('list')->withErrors('Nguoi dung khong ton tai');
     }
@@ -103,6 +101,13 @@ class ControllerList extends Controller
     public function delete(string $id)
     {
         if ($user = User::find($id)) {
+            if ($user->favorities->count() != 0) {
+
+                return redirect()->route('list')->withErrors('Khong the xoa ngoui dung!(Co Favor');
+            }
+            if ($user->posts->count() !== 0) {
+                return redirect()->route('list')->withErrors('Khong the xoa ngoui dung!(Co Post');
+            }
             $image = $user->image;
             $user->delete();
             $imagePath = 'image/' . $image;
