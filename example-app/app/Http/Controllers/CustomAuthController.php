@@ -14,6 +14,10 @@ class CustomAuthController extends Controller
     {
         return view('index');
     }
+    public function abc()
+    {
+        return view('abc');
+    }
     public function login()
     {
         return view('login');

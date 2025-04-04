@@ -6,7 +6,11 @@
         @if (Session::has('success'))
             <div class="text-danger">{{ Session::get('success') }}</div>
         @endif
+        @if (Session::has('errors'))
+            <div class="text-danger">{{ Session::get('errors') }}</div>
+        @endif
         <table class="table table-bordered" style="width:100%">
+
             <thead>
                 <tr>
                     <th style="width: 10%">#</th>

@@ -9,6 +9,8 @@ use App\Http\Controllers\CustomAuthController;
 |--------------------------------------------------------------------------
 */
 Route::get('', [CustomAuthController::class, 'index'])->name('home');
+Route::get('', [CustomAuthController::class, 'abc'])->name('abc');
+
 Route::get('login', [CustomAuthController::class, 'login'])->name('login');
 Route::post('login', [CustomAuthController::class, 'customLogin'])->name('login.custom');
 Route::get('registration', [CustomAuthController::class, 'registration'])->name('register');

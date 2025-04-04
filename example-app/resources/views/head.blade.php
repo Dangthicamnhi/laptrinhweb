@@ -10,7 +10,7 @@
     <title> @yield('title') </title>
 </head>
 
-<body>
+
 
     <body>
         <div class="header">

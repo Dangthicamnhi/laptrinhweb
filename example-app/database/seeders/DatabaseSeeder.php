@@ -36,5 +36,10 @@ class DatabaseSeeder extends Seeder
         //         'password' => Hash::make('123456'),
         //     ]);
         // }
+        $this->call(UserSeeder::class);
+        $this->call(UserFavoriteSeeder::class);
+        $this->call(PostsSeeder::class);
+        $this->call(ProfileSeeder::class);
+        $this->call(FavoriteSeeder::class);
     }
 }
